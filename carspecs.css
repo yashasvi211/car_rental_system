@@ -1,0 +1,359 @@
+*{
+  margin: 0;
+  padding: 0
+  
+}
+
+body{
+min-height: 100vh;
+background-color: rgba(13, 107, 90, 0.479);
+}
+
+.navbar{
+padding: 20px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0%;
+z-index: 999;
+background-color: rgba(182, 77, 35);
+box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo a{
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .menu{
+position: absolute;
+top: 50%;
+left: 80%;
+transform: translate(-50%,-50%);
+height: 30px;
+}
+
+.navbar .menu li{
+display: inline-block;
+position: relative;
+}
+
+.navbar .menu li ul.dropdown li{
+display: block;
+}
+
+.navbar .menu li ul.dropdown {
+width: 300%;
+background: rgba(182, 77, 35);
+position: absolute;
+border-radius: 20px;
+border: 1px solid white;
+z-index: 999;
+top: 100%;
+display: none;
+box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .menu li a:hover{
+background: white;
+color: rgba(182, 77, 35);
+}
+
+.navbar .menu li:hover ul.dropdown {
+display: block;
+}
+
+.navbar .menu li{
+list-style: none;
+display: inline-block;
+}
+
+.navbar .menu li a{
+display: block;
+margin-left: 25px;
+color: white;
+border-bottom: 8px solid transparent;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+}
+
+.navbar .menu li a:hover{
+border-bottom: 4px solid white;
+}
+
+h1{
+background-color:rgb(56, 48, 48);
+padding: 20px;
+color: white;
+text-align: center;
+box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/1011/814/541/lamborghini-lamborghini-aventador-car-supercars-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #f3f4f6;
+}
+
+.btn2{
+border-radius: 4px;
+background-color: rgb(16, 170, 68);
+border: none;
+color: rgb(27, 22, 1);
+text-align: center;
+font-size: 20px;
+padding: 10px;
+width: 105px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+margin-top: 0px;
+margin-left: 320px;
+}
+
+.btn2{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn2:after {
+content: '✔';
+position: absolute;
+opacity: 0;  
+top: 8px;
+right: -40px;
+transition: 0.5s;
+}
+
+.btn2:hover{
+padding-right: 24px;
+padding-left:8px;
+}
+
+.btn2:hover:after {
+opacity: 1;
+right: 10px;
+}
+
+.btn3{
+border-radius: 4px;
+background-color: rgb(68, 95, 77);
+border: none;
+color: rgb(27, 22, 1);
+text-align: center;
+font-size: 20px;
+padding: 10px;
+width: 105px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+margin-left: 320px;
+}
+
+.btn3{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn1{
+border-radius: 4px;
+background-color: rgb(99, 88, 43);
+border: none;
+color: rgb(27, 22, 1);
+text-align: center;
+font-size: 20px;
+padding: 10px;
+width: 105px;
+transition: all 0.5s;
+cursor: default;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+margin-top: 0px;
+margin-left: 320px;
+}
+
+.btn1{
+cursor: default;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+
+
+.btn {
+border-radius: 4px;
+background-color: rgb(221, 185, 27);
+border: none;
+color: rgb(27, 22, 1);
+text-align: center;
+font-size: 20px;
+padding: 10px;
+width: 105px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 36px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+margin-top: -200px;
+margin-left: 320px;
+}
+
+.btn{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn:after {
+content: '$';
+position: absolute;
+opacity: 0;  
+top: 12px;
+right: -40px;
+transition: 0.5s;
+}
+
+.btn:hover{
+padding-right: 24px;
+padding-left:8px;
+}
+
+.btn:hover:after {
+opacity: 1;
+right: 10px;
+}
+
+.card{
+  width: 500px;
+  height: 410px;
+  background: rgba(56, 51, 51, 0.534);
+  box-shadow: 0 10px 20px rgba(8, 6, 6, 0.3);
+  border-radius: 5px;
+  border-color: black;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 790px;
+}
+
+.card img{
+  height: 400px;
+  width: 100%;
+  align-self: center;
+}
+
+.specs{
+width: 450px;
+height: 400px;
+background: rgb(214, 211, 211);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+border-color: black;
+padding: 10px;
+margin-top: -420px;
+margin-left: 70px;
+}
+
+.formDate{
+  width: 450px;
+  height: 450px;
+  background: rgb(214, 211, 211);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border-color: black;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 70px;
+  }
+
+  .formDate .sort{
+    font-weight: 700;
+font-size: 24px;
+color: rgba(182, 77, 35);
+}
+
+.specs .sort{
+font-weight: 700;
+font-size: 24px;
+color: rgba(182, 77, 35);
+}
+
+.specs .ans{
+font-weight: 700;
+font-size: 24px;
+color: black;
+}
+
+.formDate .ans{
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  }
+
+.formDate .info input, .formDate .info textarea {
+padding: 7px;
+font-size: 18px;
+}
+
+.formDate .info input.form-control {
+height: auto;
+background-color: white;
+color: black;
+}
+
+.btn3{
+  border-radius: 20px;
+  background-color:red;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  margin-left: 125px;
+  margin-bottom: 20px;
+  }
+  
+  .btn3{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+
+footer{
+position: sticky;
+top: 100%;
+background-color: rgba(182, 77, 35);
+height: 13vh;
+}
+
+footer p{
+text-align: center;
+line-height: 13vh;
+}
+
+footer p a{
+text-decoration: none;
+color: white;
+font-size: 24px;
+font-weight: bold;
+}
+
+
+
